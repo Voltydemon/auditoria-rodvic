@@ -73,3 +73,18 @@ La política debe exigir:
 - Revisión de código antes de pasar a producción.
 - Pruebas de seguridad en formularios, filtros y parámetros de URL.
 - Principio de mínimo privilegio para cuentas de base de datos.
+
+## 7. Controles de mitigación
+
+Como controles de mitigación se recomienda:
+
+- Implementar un Web Application Firewall (WAF).
+- Monitorear consultas anómalas o patrones como `' OR '1'='1`.
+- Limitar permisos de la cuenta usada por la aplicación.
+- Registrar intentos fallidos o sospechosos.
+- Segmentar la base de datos que contiene pólizas y datos patrimoniales.
+- Mantener respaldos seguros y probados.
+
+## 8. Prioridad de corrección
+
+La prioridad de corrección es **alta/crítica**, ya que afecta directamente la confidencialidad de los datos de clientes. Para SeguroTotal, la exposición de pólizas y datos patrimoniales tendría un impacto severo en la confianza y continuidad del negocio.
