@@ -40,3 +40,20 @@ El alcance considera:
 - Construcción de matriz de riesgo.
 - Propuestas de prevención, mitigación y recuperación.
 
+## 5. Resultados generales
+
+Los resultados muestran que las vulnerabilidades evaluadas representan riesgos importantes para SeguroTotal, especialmente por el tipo de información que custodia el portal.
+
+| Vulnerabilidad | CVSS 3.1 | Severidad | Riesgo de negocio |
+|---|---:|---|---|
+| Inyección SQL | 8.2 | High | Crítico |
+| XSS Reflected | 6.1 | Medium | Alto |
+| Inyección de comandos | 10.0 | Critical | Crítico |
+
+La vulnerabilidad más grave es la inyección de comandos, ya que permite ejecutar instrucciones en el servidor y podría comprometer completamente la plataforma. En segundo lugar se ubica la inyección SQL, por su capacidad de exponer información de clientes y pólizas. Finalmente, XSS Reflected se considera de riesgo alto para el negocio, ya que puede facilitar robo de sesión, suplantación o engaño a usuarios.
+
+## 6. Conclusión ejecutiva
+
+SeguroTotal debe priorizar la corrección de las fallas que afectan directamente la confidencialidad, integridad y disponibilidad de sus sistemas. Las medidas más urgentes son eliminar la ejecución de comandos con entrada del usuario, implementar consultas parametrizadas, validar entradas, escapar salidas HTML y fortalecer el monitoreo del portal.
+
+La protección del portal no debe verse solo como una corrección técnica, sino como una medida necesaria para resguardar pólizas, datos patrimoniales, continuidad del servicio y confianza de los clientes.
