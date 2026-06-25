@@ -31,3 +31,23 @@ SeguroTotal es una empresa ficticia de seguros generales. Su portal de clientes 
 | Respaldos | Pérdida o restauración incompleta tras incidente | Command Injection |
 | Logs de auditoría | Falta de trazabilidad ante ataque | Todas |
 | Repositorio de código | Publicación de código inseguro | Todas |
+
+## 4. Análisis según la industria
+
+En una empresa de seguros generales, el impacto de una vulnerabilidad no se limita a la exposición de datos técnicos. La información contenida en las pólizas puede revelar patrimonio, bienes asegurados, direcciones, condiciones contractuales y antecedentes de clientes.
+
+Por esta razón, una vulnerabilidad que en otro rubro podría considerarse moderada, en SeguroTotal puede elevarse a riesgo alto o crítico debido a la sensibilidad de los datos custodiados.
+
+## 5. Activos prioritarios
+
+Los activos que requieren mayor prioridad de protección son:
+
+1. **Servidor web:** porque si es comprometido puede afectar todo el portal.
+2. **Base de datos de pólizas:** porque contiene el núcleo del negocio.
+3. **Datos patrimoniales:** porque son altamente sensibles.
+4. **Credenciales y sesiones:** porque permiten acceso a cuentas de clientes.
+5. **Respaldos:** porque sostienen la recuperación ante incidentes.
+
+## 6. Conclusión
+
+La protección de los activos de SeguroTotal debe orientarse a evitar accesos no autorizados, manipulación de información contractual e interrupción del portal. La priorización debe considerar tanto el puntaje técnico de cada vulnerabilidad como el impacto real en el negocio de seguros generales.
